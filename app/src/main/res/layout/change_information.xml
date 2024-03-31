@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".ChangeInformationActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/baseline_account_24" />
+
+    <TextView
+        android:id="@+id/tvUsernameChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
+        android:text="@string/t_n_t_i_kho_n"
+        android:textColor="#099585"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edtUsernameChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvEmailChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="20dp"
+        android:text="@string/email"
+        android:textColor="#099585"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edtEmailChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvPhoneChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:drawablePadding="20dp"
+        android:text="@string/s_i_n_tho_i"
+        android:textColor="#099585"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edtPhoneChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvPasswordChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="20dp"
+        android:text="@string/m_t_kh_u"
+        android:textColor="#958E09"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edtPasswordChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingHorizontal="15dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvConfirmChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="20dp"
+        android:text="@string/x_c_nh_n_m_t_kh_u"
+        android:textColor="#958E09"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edtConfirmChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingHorizontal="15dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/th_ng_b_o_l_i"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#47CC9D"
+        android:drawableLeft="@drawable/baseline_security_update_good_24"
+        android:padding="10dp"
+        android:text="@string/c_p_nh_t"
+        android:textSize="20dp" />
+</LinearLayout>

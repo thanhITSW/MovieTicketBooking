@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MovieTicket"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".PayPalActivity"
+            android:label="@string/paypal"
+            android:exported="false" />
+        <activity
+            android:name=".CreditCardActivity"
+            android:label="@string/th_t_n_d_ng"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewActivity"
+            android:exported="false"
+            android:label="@string/nh_gi" />
+        <activity
+            android:name=".ElectronicTicketActivity"
+            android:exported="false"
+            android:label="@string/v_i_n_t" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false"
+            android:label="@string/t_v" />
+        <activity
+            android:name=".ChangeInformationActivity"
+            android:exported="false"
+            android:label="@string/c_p_nh_t_t_i_kho_n" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="@string/ng_k1" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="@string/ng_nh_p1" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false"
+            android:label="@string/l_ch_s_t_v" />
+        <activity
+            android:name=".AccountActivity"
+            android:exported="false"
+            android:label="@string/t_i_kho_n" />
+        <activity
+            android:name=".DetailsMovieActivity"
+            android:exported="false"
+            android:label="@string/th_ng_tin_chi_ti_t" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/trang_ch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".ReminderReceiver"
+            android:exported="false"
+            />
+    </application>
+
+</manifest>
